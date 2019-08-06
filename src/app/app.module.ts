@@ -3,14 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomerlistComponent } from './customerlist/customerlist.component';
+import {HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CreatecustomerComponent } from './createcustomer/createcustomer.component';
+import { UpdatecustomerComponent } from './updatecustomer/updatecustomer.component';
+import { DeletecustomerComponent } from './deletecustomer/deletecustomer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomerlistComponent,
+    HomeComponent,
+    CreatecustomerComponent,
+    UpdatecustomerComponent,
+    DeletecustomerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
