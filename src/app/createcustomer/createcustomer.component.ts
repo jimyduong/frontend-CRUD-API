@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {BackendAPIService} from '../backend-api.service';
 import {Router} from '@angular/router';
+import {FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-createcustomer',
@@ -11,7 +12,7 @@ export class CreatecustomerComponent implements OnInit {
   name: string;
   email: string;
   address: string;
-
+  creteForm: FormGroup;
   constructor(public api: BackendAPIService,
               private router: Router) {
   }

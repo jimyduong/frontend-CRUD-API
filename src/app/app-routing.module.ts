@@ -5,6 +5,7 @@ import {CreatecustomerComponent} from './createcustomer/createcustomer.component
 import {HomeComponent} from './home/home.component';
 import {UpdatecustomerComponent} from './updatecustomer/updatecustomer.component';
 import {DeletecustomerComponent} from './deletecustomer/deletecustomer.component';
+import {DetailComponent} from './detail/detail.component';
 
 
 const routes: Routes = [
@@ -21,8 +22,8 @@ const routes: Routes = [
     component: UpdatecustomerComponent
   },
   {
-    path: 'customer/delete/:id',
-    component: DeletecustomerComponent
+    path: 'customer/detail/:id',
+    component: DetailComponent
   }
 ];
 

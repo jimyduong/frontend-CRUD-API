@@ -17,15 +17,13 @@ export class BackendAPIService {
 
   create(name: string, email: string, address: string): Observable<any> {
     const data = {name, email, address};
-    console.log(data);
+    // console.log(data);
     return this.http.post(`${this.apiUrl}/create`, data);
   }
 
   delete(id) {
-    if (confirm('Do you want delete?')) {
-      console.log('delete:', id);
-      return this.http.delete(`${this.apiUrl}/delete/${id}`);
-    }
+    // console.log('delete:', id);
+    return this.http.delete(`${this.apiUrl}/delete/${id}`);
   }
 
   detail(id: number): Observable<any> {

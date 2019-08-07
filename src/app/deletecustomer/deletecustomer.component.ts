@@ -16,10 +16,14 @@ export class DeletecustomerComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.activeRoute.params.subscribe(params => {
-      this.id = params.id;
-    });
-    this.deleteCustomer(this.id);
+    if (confirm('Do you want delete?')) {
+      this.activeRoute.params.subscribe(params => {
+        this.id = params.id;
+      });
+      this.deleteCustomer(this.id);
+    } else {
+      this.router.navigate(['/customer']);
+    }
   }
 
   deleteCustomer(id: number) {

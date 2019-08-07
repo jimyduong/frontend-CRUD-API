@@ -10,6 +10,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CreatecustomerComponent } from './createcustomer/createcustomer.component';
 import { UpdatecustomerComponent } from './updatecustomer/updatecustomer.component';
 import { DeletecustomerComponent } from './deletecustomer/deletecustomer.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DeletecustomerComponent } from './deletecustomer/deletecustomer.compone
     CreatecustomerComponent,
     UpdatecustomerComponent,
     DeletecustomerComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
